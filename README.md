@@ -31,3 +31,12 @@ Here is the diagram of the states used and their transitions:
 
 It begins in the SPIRAL state, moving in a widening spiral while gradually increasing speed. After a set time, it transitions to BACK, moving backward for a brief period to avoid obstacles. The robot then switches to TURN, where it rotates by a random angle. Once the turn is complete, it randomly decides to either return to SPIRAL (40% probability) or move FORWARD (60% probability) in a straight line. If an obstacle is detected while moving FORWARD, the robot transitions back to BACK, and the cycle repeats.
 
+
+## Observations
+
+In the red zones, once the robot enters, it will be difficult to exit since they are areas with limited space and it will take a while to exit since the TURN turns are random.
+On the other hand, if the robot enters green areas, it gets stuck since the space between the leg of the table and the sofa is the same size as that of the robot vacuum cleaner.
+
+![image](https://github.com/user-attachments/assets/5003e394-62b4-4238-96cb-7bdc1a48f7c2)
+
+
