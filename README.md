@@ -31,7 +31,7 @@ Here is the diagram of the states used and their transitions:
 
 
 
-It begins in the SPIRAL state, moving in a widening spiral while gradually increasing speed. After a set time, it transitions to BACK, moving backward for a brief period to avoid obstacles. The robot then switches to TURN, where it rotates by a random angle. Once the turn is complete, it randomly decides to either return to SPIRAL (30% probability) or move FORWARD (70% probability) in a straight line. If an obstacle is detected while moving FORWARD, the robot transitions back to BACK, and the cycle repeats.
+It begins in the SPIRAL state, moving in a widening spiral while gradually increasing speed. After an obstacle is detected, it transitions to BACK, moving backward for a brief period to avoid obstacles. The robot then switches to TURN, where it rotates by a random angle. Once the turn is complete, it randomly decides to either return to SPIRAL (30% probability) or move FORWARD (70% probability) in a straight line. If an obstacle is detected while moving FORWARD, the robot transitions back to BACK, and the cycle repeats.
 
 Here are some videos of the algorithm working:
 These videos are at x4 speed
