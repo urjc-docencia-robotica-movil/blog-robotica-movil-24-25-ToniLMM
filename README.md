@@ -26,10 +26,11 @@ The robot follows a finite state machine (FSM) model to decide its behavior base
 
 Here is the diagram of the states used and their transitions:
 
-![image](https://github.com/user-attachments/assets/60d67063-7475-407d-8950-44ebb9b6ab55)
+![image](https://github.com/user-attachments/assets/3ae03de2-53a2-4353-8c16-a12b69de8e6c)
 
 
-It begins in the SPIRAL state, moving in a widening spiral while gradually increasing speed. After a set time, it transitions to BACK, moving backward for a brief period to avoid obstacles. The robot then switches to TURN, where it rotates by a random angle. Once the turn is complete, it randomly decides to either return to SPIRAL (40% probability) or move FORWARD (60% probability) in a straight line. If an obstacle is detected while moving FORWARD, the robot transitions back to BACK, and the cycle repeats.
+
+It begins in the SPIRAL state, moving in a widening spiral while gradually increasing speed. After a set time, it transitions to BACK, moving backward for a brief period to avoid obstacles. The robot then switches to TURN, where it rotates by a random angle. Once the turn is complete, it randomly decides to either return to SPIRAL (30% probability) or move FORWARD (70% probability) in a straight line. If an obstacle is detected while moving FORWARD, the robot transitions back to BACK, and the cycle repeats.
 
 
 ## Observations
