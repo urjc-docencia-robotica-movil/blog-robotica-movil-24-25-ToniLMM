@@ -5,9 +5,11 @@ This will be Toni's Mobile Robotics blog, where the status of the practices, the
 
 * [Index][Ind]
 * [Practice 1][p1]
+* [Practice 2][p2]
 
 [Ind]: https://github.com/urjc-docencia-robotica-movil/blog-robotica-movil-24-25-ToniLMM/blob/main/README.md/#index
 [p1]: https://github.com/urjc-docencia-robotica-movil/blog-robotica-movil-24-25-ToniLMM/blob/main/README.md/#practice-1-basic-vacuum-cleaner
+[p2]: https://github.com/urjc-docencia-robotica-movil/blog-robotica-movil-24-25-ToniLMM/blob/main/README.md/#practice-2-follow-line
 
 ## Practice 1: Basic Vacuum Cleaner
 
@@ -51,3 +53,4 @@ On the other hand, if the robot enters green areas, it gets stuck since the spac
 ![image](https://github.com/user-attachments/assets/5003e394-62b4-4238-96cb-7bdc1a48f7c2)
 
 
+## Practice 2: Follow line
