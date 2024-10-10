@@ -54,3 +54,18 @@ On the other hand, if the robot enters green areas, it gets stuck since the spac
 
 
 ## Practice 2: Follow line
+
+This second practice consists of a Formula 1 car that must follow the center of the red line and complete the circuit as quickly as possible. The goal of this exercise is to perform a PID reactive control capable of following the line painted on the racing circuit
+
+## First days
+
+Having already made the code, I have been improving the code and lowering the track times. I have tried many things such as raising the centroid to anticipate the curves in advance, increasing the maximum speed both on straight lines and in curves... However, the behavior did not vary too much so I have left the code as at the beginning with slight changes
+
+## Final version
+This final version is a mix of speed and staying on top of the line as much as possible. However, speed is prioritized a little more than going above the line, because minimum times are required in this practice. Even if speed is prioritized, line tracking continues at all times. If it is necessary to be on top of the line all time, the maximum speed can be reduced and the PIDs adjusted, in this way the car can correct its trajectory more efficiently and effectively and make smoother movements.
+
+
+## Observations
+
+
+To date, my best lap has been approximately 56 seconds with changes in the code, however they were tests since the car deviated a lot and the relationship between following the line and going at a good speed was broken. It should also be noted that times may vary due to computer performance.
