@@ -92,6 +92,10 @@ Without the burden of having to record the screen, the time improves by approxim
 
 https://github.com/user-attachments/assets/e551b67d-c586-4881-9cb1-4d136058774c
 
+It also has a function implemented that looks for the red line:
+
+[Screencast from 2024-10-13 18-55-27.webm](https://github.com/user-attachments/assets/c5c8a4f1-57cb-44e7-b2b1-d6efc410e620)
+
 
 ## Observations
 
