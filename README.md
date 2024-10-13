@@ -96,6 +96,11 @@ It also has a function implemented that looks for the red line:
 
 [Screencast from 2024-10-13 18-55-27.webm](https://github.com/user-attachments/assets/c5c8a4f1-57cb-44e7-b2b1-d6efc410e620)
 
+### ACKERMAN
+
+The Ackerman model has been difficult to control and with the values ​​that I have tried I have not completely succeeded since the car oscillates a lot, however by changing the parameters and setting Vmax to 15 I have managed to complete the circuit in 160 seconds
+
+https://github.com/user-attachments/assets/44c9a636-3803-4e91-87fd-474604ff8172
 
 ## Observations
 
