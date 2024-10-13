@@ -64,10 +64,13 @@ Having already made the code, I have been improving the code and lowering the tr
 ## Final version
 This final version is a mix of speed and staying on top of the line as much as possible. However, speed is prioritized a little more than going above the line, because minimum times are required in this practice. Even if speed is prioritized, line tracking continues at all times. If it is necessary to be on top of the line all time, the maximum speed can be reduced and the PIDs adjusted, in this way the car can correct its trajectory more efficiently and effectively and make smoother movements.
 
-Here is the video of the final version working:
+Here is the video of the final version working (recording screen final time = 67.82):
 
 https://github.com/user-attachments/assets/6da8bf55-93b4-4801-81fa-78c1ed1dfb86
 
+Without the burden of having to record the screen, the time improves by approximately 5 seconds (final time = 63.20s):
+
+https://github.com/user-attachments/assets/e551b67d-c586-4881-9cb1-4d136058774c
 
 
 ## Observations
