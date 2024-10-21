@@ -108,7 +108,7 @@ https://github.com/user-attachments/assets/44c9a636-3803-4e91-87fd-474604ff8172
 
 To date, my best lap has been approximately 56 seconds with changes in the code, however they were tests since the car deviated a lot and the relationship between following the line and going at a good speed was broken. It should also be noted that times may vary due to computer performance.
 
-## Local navigation with VFF 
+## Practice 3: Local navigation with VFF 
 
 The objective of this practice is to implement the logic of the VFF navigation algorithm.
 
