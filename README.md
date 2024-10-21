@@ -6,10 +6,12 @@ This will be Toni's Mobile Robotics blog, where the status of the practices, the
 * [Index][Ind]
 * [Practice 1][p1]
 * [Practice 2][p2]
+* [Practice 3][p3]
 
 [Ind]: https://github.com/urjc-docencia-robotica-movil/blog-robotica-movil-24-25-ToniLMM/blob/main/README.md/#index
 [p1]: https://github.com/urjc-docencia-robotica-movil/blog-robotica-movil-24-25-ToniLMM/blob/main/README.md/#practice-1-basic-vacuum-cleaner
 [p2]: https://github.com/urjc-docencia-robotica-movil/blog-robotica-movil-24-25-ToniLMM/blob/main/README.md/#practice-2-follow-line
+[p3]: https://github.com/urjc-docencia-robotica-movil/blog-robotica-movil-24-25-ToniLMM/blob/main/README.md/#practice-3-local-navigation-with-vff
 
 ## Practice 1: Basic Vacuum Cleaner
 
@@ -18,7 +20,7 @@ Today I implemented the code structure that I had already made and ran it to see
 ![Screenshot from 2024-09-16 10-15-19](https://github.com/user-attachments/assets/3d073f8d-0234-4de1-a126-09db35507f13)
 ![Screenshot from 2024-09-25 19-58-23](https://github.com/user-attachments/assets/1262813c-2042-4e55-b4f0-0b177d0507b7)
 
-## Final algorithm
+### Final algorithm
 
 The robot follows a finite state machine (FSM) model to decide its behavior based on sensor inputs and time-based triggers. It transitions between four states:
 
@@ -45,7 +47,7 @@ https://github.com/user-attachments/assets/6f952e10-9143-47c6-83b3-df8b4b8999bc
 https://github.com/user-attachments/assets/30b68298-1c83-42e8-ad41-57bae74289ef
 
 
-## Observations
+### Observations
 
 In the red zones, once the robot enters, it will be difficult to exit since they are areas with limited space and it will take a while to exit since the TURN turns are random.
 On the other hand, if the robot enters green areas, it gets stuck since the space between the leg of the table and the sofa is the same size as that of the robot vacuum cleaner.
@@ -57,11 +59,11 @@ On the other hand, if the robot enters green areas, it gets stuck since the spac
 
 This second practice consists of a Formula 1 car that must follow the center of the red line and complete the circuit as quickly as possible. The goal of this exercise is to perform a PID reactive control capable of following the line painted on the racing circuit
 
-## First days
+### First days
 
 Having already made the code, I have been improving the code and lowering the track times. I have tried many things such as raising the centroid to anticipate the curves in advance, increasing the maximum speed both on straight lines and in curves... However, the behavior did not vary too much so I have left the code as at the beginning with slight changes
 
-## Final version
+### Final version
 This final version is a mix of speed and staying on top of the line as much as possible. However, speed is prioritized a little more than going above the line, because minimum times are required in this practice. Even if speed is prioritized, line tracking continues at all times. If it is necessary to be on top of the line all time, the maximum speed can be reduced and the PIDs adjusted, in this way the car can correct its trajectory more efficiently and effectively and make smoother movements.
 
 ### Algorithm explanation
@@ -105,3 +107,17 @@ https://github.com/user-attachments/assets/44c9a636-3803-4e91-87fd-474604ff8172
 ## Observations
 
 To date, my best lap has been approximately 56 seconds with changes in the code, however they were tests since the car deviated a lot and the relationship between following the line and going at a good speed was broken. It should also be noted that times may vary due to computer performance.
+
+## Local navigation with VFF 
+
+The objective of this practice is to implement the logic of the VFF navigation algorithm.
+
+Navigation using VFF (Virtual Force Field), consists of:
+
+  - Each object in the environment generates a repulsive force towards the robot.
+
+  - Destiny generates an attractive force in the robot.
+
+This makes it possible for the robot to go towards the target, distancing itself of the obstacles, so that their address is the vector sum of all the forces.
+
+### First days
