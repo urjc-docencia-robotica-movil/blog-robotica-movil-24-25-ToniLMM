@@ -121,3 +121,9 @@ Navigation using VFF (Virtual Force Field), consists of:
 This makes it possible for the robot to go towards the target, distancing itself of the obstacles, so that their address is the vector sum of all the forces.
 
 ### First days
+
+
+### Difficulties
+
+[Screencast from 2024-10-23 13-40-13.webm](https://github.com/user-attachments/assets/22b7c7d7-5055-4b11-9dd2-b68525e657b5)
+
