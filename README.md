@@ -122,6 +122,7 @@ This makes it possible for the robot to go towards the target, distancing itself
 
 ### First days
 
+Already having a code, I had to tweak it since the platform has changed things compared to last year. On the other hand, when seeing how it works, local minimums have appeared which I have had to solve by adding the 'escape_local_minimum()' function.
 
 ### Final algorithm
 
@@ -155,8 +156,10 @@ Here is the video of the final version working:
 
 https://github.com/user-attachments/assets/93bd2596-064f-410d-9abe-5df805e947bf
 
-
 ### Observations
 
+During the first days I found 2 local minimums (the attractive and repulsive force cancel each other, giving a resulting vector of 0), which I solved with 'escape_local_minimum()' function. This function is very simple, it is activated when it detects that the car has not traveled more than 5 meters in 5 seconds (because it is stopped or moving too slowly), therefore when it is activated the car advances and turns slightly for 3 seconds, which which causes the forces to no longer cancel each other out and the algorithm to work again.
+
+This solution works due to the characteristics of this circuit, however with other conditions this function could be modified so that it followed the right wall until it left the local minimum, all of this depends on the case.
 
 [Screencast from 2024-10-25 11-19-01.webm](https://github.com/user-attachments/assets/6e562e4a-1f1b-4b2f-b2eb-ce4d6e454456)
