@@ -7,11 +7,13 @@ This will be Toni's Mobile Robotics blog, where the status of the practices, the
 * [Practice 1][p1]
 * [Practice 2][p2]
 * [Practice 3][p3]
+* [Practice 4][p4]
 
 [Ind]: https://github.com/urjc-docencia-robotica-movil/blog-robotica-movil-24-25-ToniLMM/blob/main/README.md/#index
 [p1]: https://github.com/urjc-docencia-robotica-movil/blog-robotica-movil-24-25-ToniLMM/blob/main/README.md/#practice-1-basic-vacuum-cleaner
 [p2]: https://github.com/urjc-docencia-robotica-movil/blog-robotica-movil-24-25-ToniLMM/blob/main/README.md/#practice-2-follow-line
 [p3]: https://github.com/urjc-docencia-robotica-movil/blog-robotica-movil-24-25-ToniLMM/blob/main/README.md/#practice-3-local-navigation-with-vff
+[p4]: https://github.com/urjc-docencia-robotica-movil/blog-robotica-movil-24-25-ToniLMM/blob/main/README.md/#practice-4-global-navigation-using-teletaxi
 
 ## Practice 1: Basic Vacuum Cleaner
 
@@ -163,3 +165,6 @@ During the first days I found 2 local minimums (the attractive and repulsive for
 This solution works due to the characteristics of this circuit, however with other conditions this function could be modified so that it followed the right wall until it left the local minimum, all of this depends on the case.
 
 [Screencast from 2024-10-25 11-19-01.webm](https://github.com/user-attachments/assets/6e562e4a-1f1b-4b2f-b2eb-ce4d6e454456)
+
+
+## Practice 4: Global Navigation using TeleTaxi
