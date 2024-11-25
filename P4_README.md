@@ -17,7 +17,7 @@ At the moment it makes the entire map (image) but it will be improved so that it
 
 ### Final algorithm
 
-H
+Here are a few videos of the final version working:
 
 [Screencast from 2024-11-25 14-18-27.webm](https://github.com/user-attachments/assets/cae32769-540e-4523-aa2b-92ccde926b4a)
 
