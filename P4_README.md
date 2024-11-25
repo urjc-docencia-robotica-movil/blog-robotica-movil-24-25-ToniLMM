@@ -19,27 +19,27 @@ At the moment it makes the entire map (image) but it will be improved so that it
 
 1. Map Initialization:
    
-The city map is loaded as a 2D numpy array from an image file. The map is processed to distinguish accessible (white) areas from obstacles (black), and a cost grid is initialized to store computed path costs.
+   The city map is loaded as a 2D numpy array from an image file. The map is processed to distinguish accessible (white) areas from obstacles (black), and a cost grid is initialized to store computed path costs.
 
 2. Gradient Cost Calculation:
    
-The calculate_cost_gradient function computes a wavefront-based cost gradient starting from the target location. It propagates costs outward, marking obstacles and expanding their influence after the gradient calculation. This ensures paths are planned around obstacles. The process uses a breadth-first search with priority for lower costs.
+   The calculate_cost_gradient function computes a wavefront-based cost gradient starting from the target location. It propagates costs outward, marking obstacles and expanding their influence after the gradient calculation. This ensures paths are planned around obstacles. The process uses a breadth-first search with priority for lower costs.
 
 3. Obstacle Expansion:
    
-The expand_obstacles function enlarges obstacles within a specified radius, making them less likely to be traversed by the robot during pathfinding.
+   The expand_obstacles function enlarges obstacles within a specified radius, making them less likely to be traversed by the robot during pathfinding.
 
 4. Path Extraction:
    
-The path_extraction function derives the shortest path from the robot's current position to the target by following the cost gradient. It uses a greedy approach, always selecting the next step with the lowest cost.
+   The path_extraction function derives the shortest path from the robot's current position to the target by following the cost gradient. It uses a greedy approach, always selecting the next step with the lowest cost.
 
 5. Robot Movement:
     
-The move_robot function guides the robot along the extracted path. It uses real-time pose data to calculate the distance and orientation to the next waypoint and adjusts linear and angular velocities accordingly. The robot stops when it reaches the goal.
+   The move_robot function guides the robot along the extracted path. It uses real-time pose data to calculate the distance and orientation to the next waypoint and adjusts linear and angular velocities accordingly. The robot stops when it reaches the goal.
 
 6. Main Loop:
     
-The main loop continuously updates the robot's position and listens for a new target input from the GUI. When a target is selected, the system recalculates the cost gradient and path, and commands the robot to navigate toward the goal.
+   The main loop continuously updates the robot's position and listens for a new target input from the GUI. When a target is selected, the system recalculates the cost gradient and path, and commands the robot to navigate toward the goal.
 
 Here are a few videos of the final version working:
 
