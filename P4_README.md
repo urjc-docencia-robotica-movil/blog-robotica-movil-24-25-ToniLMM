@@ -54,3 +54,14 @@ Here are a few videos of the final version working:
 [Screencast from 2024-11-25 14-37-13.webm](https://github.com/user-attachments/assets/e8e58190-b4d6-4d0e-b89b-589b6a40f3b2)
 
 [Screencast from 2024-11-25 14-41-03.webm](https://github.com/user-attachments/assets/f247cc05-ceef-4fee-b46c-52310205b679)
+
+### Observations
+
+In another version of the code where the cost of orthogonal directions was 1 and diagonal directions were 1.4, the path led to unnecessary turns that worsened the good performance of the algorithm. That's why in the final version all directions have the same cost.
+
+![Screenshot from 2024-11-24 16-49-22](https://github.com/user-attachments/assets/fc9ae9b7-8894-4589-8971-256415c5d5fd)
+
+![Screenshot from 2024-11-24 17-59-25](https://github.com/user-attachments/assets/63dd72bb-45f0-4248-8365-1b338d909273)
+
+![image](https://github.com/user-attachments/assets/db2a4186-155b-4d0f-a50b-8ab2d595c9ad)
+
