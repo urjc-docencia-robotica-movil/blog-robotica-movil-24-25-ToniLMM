@@ -17,6 +17,8 @@ At the moment it makes the entire map (image) but it will be improved so that it
 
 ### Final algorithm
 
+This final algorithm is a navigation system for a robot, structured to calculate a cost gradient from a target location, extract a path to the target, and guide the robot along that path while avoiding obstacles. Here's how it is organized and operates:
+
 1. Map Initialization:
    
    The city map is loaded as a 2D numpy array from an image file. The map is processed to distinguish accessible (white) areas from obstacles (black), and a cost grid is initialized to store computed path costs.
