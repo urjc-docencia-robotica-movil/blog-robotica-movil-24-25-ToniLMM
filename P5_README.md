@@ -20,4 +20,24 @@ After:
 
 ### Final algorithm
 
+Video 50 particles:
+
+
+
+Video 300 particles:
+
+
+
+https://github.com/user-attachments/assets/0a01ea52-e78b-48c7-bc8d-2c8e646a560e
+
+
+
+Video 500 particles:
+
+
+
+https://github.com/user-attachments/assets/9aa343e3-820f-4676-a9fb-b67022d10c7b
+
+
+
 ### Observations
