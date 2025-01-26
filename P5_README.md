@@ -20,6 +20,30 @@ After:
 
 ### Final algorithm
 
+This code implements a Monte Carlo Localization (MCL) algorithm for a robot using particles to estimate its position on a map.
+
+  1. get_map(): Loads the map image from the provided URL and converts it into a binary map (0 for obstacles, 255 for free space).
+
+  2. initialize_particles_map(size, map_array): Initializes the particles by selecting random positions in free space on the map and assigning random yaw (orientation).
+
+  3. propagate_particles_velocity(particles, dt): Propagates the particles' positions based on a constant velocity and adds noise. The particles' new positions are calculated using basic kinematics.
+
+  4. compute_particle_weights_parallel(particles, laser_data, map_array): Computes the weight of each particle based on how well its virtual laser readings match the real laser data. This is done in parallel using multiprocessing to speed up the computation.
+
+  5. compute_single_particle_weight(particle, laser_data, map_array): Helper function that computes the weight of a single particle by comparing its virtual laser readings to the actual laser data.
+
+  6. resample_particles(particles, weights): Resamples the particles based on their weights using importance sampling, with higher-weight particles having a higher chance of being selected.
+
+  7. parse_laser_data(): Retrieves and processes the laser data by selecting a subset of beams based on LASER_NUM_BEAMS.
+
+  8. virtual_laser_beam(start_x, start_y, end_x, end_y): Performs ray tracing to simulate a laser beam from a starting point to an endpoint. The function returns the point where the laser hits an obstacle, or the endpoint if no obstacle is encountered.
+
+  9. get_virtual_laser(particle, map_array): Simulates laser readings from a given particle's position. It uses the virtual laser beam function for each laser beam and computes the distances to the obstacles in the environment.
+
+  10. estimate_position(particles, weights): Computes the estimated position of the robot by calculating the weighted average of the particles' positions and orientations.
+
+#### Videos
+
 Video 100 particles:
 
 
