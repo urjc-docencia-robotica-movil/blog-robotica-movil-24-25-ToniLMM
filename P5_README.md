@@ -42,6 +42,34 @@ This code implements a Monte Carlo Localization (MCL) algorithm for a robot usin
 
   10. estimate_position(particles, weights): Computes the estimated position of the robot by calculating the weighted average of the particles' positions and orientations.
 
+#### Parameters
+
+These have been the parameters used:
+
+INIT_XY_STD = 0.2
+
+INIT_ANGLE_STD = 0.1
+
+PROPAGATION_XY_NOISE_STD = 0.005
+
+PROPAGATION_ANGLE_NOISE_STD = 0.001
+
+LINEAR_VEL = 0.4
+
+ANGULAR_VEL = 0.8
+
+OBSTACLE_VALUE = 0
+
+FREE_VALUE = 255
+
+MAX_LASER_DISTANCE = 10
+
+LASER_NUM_BEAMS = 10
+
+RAYTRACING_SKIP_STEPS = 1
+
+The number of particles can be chosen by the user. In the following videos I have made examples with 100, 300, 500 and 1000 particles
+
 #### Videos
 
 Video 100 particles:
