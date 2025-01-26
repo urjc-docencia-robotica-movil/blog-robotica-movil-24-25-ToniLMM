@@ -20,9 +20,10 @@ After:
 
 ### Final algorithm
 
-Video 50 particles:
+Video 100 particles:
 
 
+[Screencast from 2025-01-26 17-26-52.webm](https://github.com/user-attachments/assets/d90071a0-db00-406e-a4f6-bb346f2f6133)
 
 Video 300 particles:
 
@@ -37,6 +38,13 @@ Video 500 particles:
 
 
 https://github.com/user-attachments/assets/9aa343e3-820f-4676-a9fb-b67022d10c7b
+
+
+Video 1000 particles:
+
+
+
+[Screencast from 2025-01-26 17-25-16.webm](https://github.com/user-attachments/assets/8d18f1b0-b741-4102-b1cd-7845bd4fc64b)
 
 
 
