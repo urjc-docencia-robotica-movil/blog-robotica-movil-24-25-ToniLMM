@@ -73,3 +73,5 @@ Video 1000 particles:
 
 
 ### Observations
+
+As can be seen from the performance of the videos, the more particles are used in the algorithm, the higher its computational cost will be, which will slow down self-localization.
